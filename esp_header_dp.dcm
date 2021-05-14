@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ESP_Header_DP
+D 6-pin header for USB-to-serial adapter (aka "FTDI header")
+K serial FTDI header
+F https://www.sparkfun.com/products/9716
+$ENDCMP
+#
+#End Doc Library
