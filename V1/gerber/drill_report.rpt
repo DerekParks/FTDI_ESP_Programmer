@@ -1,0 +1,26 @@
+Drill report for ESP_Programmer.kicad_pcb
+Created on Wed May 19 21:03:50 2021
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'ESP_Programmer.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.400mm  0.0157"  (25 holes)
+    T2  0.600mm  0.0236"  (2 holes)  (with 2 slots)
+    T3  0.650mm  0.0256"  (2 holes)  (with 2 slots)
+    T4  1.000mm  0.0394"  (16 holes)
+    T5  2.700mm  0.1063"  (4 holes)
+
+    Total plated holes count 49
+
+
+Not plated through holes are merged with plated holes
+    unplated through holes:
+    =============================================================
+
+    Total unplated holes count 0
