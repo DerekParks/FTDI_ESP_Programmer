@@ -164,7 +164,7 @@ RTS
 Wire Wire Line
 	8150 4050 8300 4050
 $Comp
-L dk_Interface-Controllers:FT232RL-REEL U1
+L ESP_Programmer-rescue:FT232RL-REEL-dk_Interface-Controllers U1
 U 1 1 611A732D
 P 7750 3750
 F 0 "U1" H 7600 4453 60  0000 C CNN
@@ -381,7 +381,7 @@ Wire Wire Line
 	4050 4300 3950 4300
 Connection ~ 3950 4300
 $Comp
-L avr-arduino:FTDI_Header J3
+L ESP_Programmer-rescue:FTDI_Header-avr-arduino J3
 U 1 1 611F70B9
 P 5250 3800
 F 0 "J3" V 5236 4088 50  0000 L CNN
@@ -473,7 +473,7 @@ Wire Wire Line
 Wire Wire Line
 	5450 4750 5450 4850
 $Comp
-L dk_Transistors-Bipolar-BJT-Arrays:MBT3904DW1T1G Q1
+L ESP_Programmer-rescue:MBT3904DW1T1G-dk_Transistors-Bipolar-BJT-Arrays Q1
 U 1 1 61214337
 P 6150 2750
 F 0 "Q1" H 6478 2803 60  0000 L CNN
