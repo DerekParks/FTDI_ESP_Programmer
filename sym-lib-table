@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name sw_spst_sm_dp)(type Legacy)(uri ${KIPRJMOD}/sw_spst_sm_dp.lib)(options "")(descr ""))
+  (lib (name ESP_Programmer-rescue)(type Legacy)(uri ${KIPRJMOD}/ESP_Programmer-rescue.lib)(options "")(descr ""))
 )
