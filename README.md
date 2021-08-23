@@ -1,4 +1,4 @@
-# FTDI Breakout with auto reset
+# A FTDI Breakout with auto reset
 
 ## Motivation
 
@@ -17,14 +17,16 @@ So at some point during the pandemic, I setout to figure out how [the auto-reset
 
 ## The Programmer
 
+![Schematic](image/schematic.png?raw=true "Schematic")
+![PCB](image/pcb.png?raw=true "PCB")
 
-(Pictured V1 where I forgot to add current limiting LED resistors, D'oh!)
+![V1 programmer](image/v1.jpg?raw=true "V1 where I forgot to add current limiting resistors to the status LED's, D'oh!")
 
+There are also physical tactical flash and reset buttons in case for some reason my amazing auto-reset circuit fails. 
 
 ## New standard pinout?
 
-Do I even need to link the standards xkcd[?](https://xkcd.com/927/) Yes, I am proposing a new standard pinout. Yes, [this makes me part of the problem](https://giphy.com/gifs/season-15-the-simpsons-15x6-xT5LMYlZh1HfoOtS6Y).
-
+Do I even need to link the standards xkcd[?](https://xkcd.com/927/) Yes, I am proposing a new standard pinout.
 
 | Old Pinouts | My Pinout   |
 | ----------- | ----------- |
@@ -36,3 +38,7 @@ Do I even need to link the standards xkcd[?](https://xkcd.com/927/) Yes, I am pr
 | GND         | GND         |
 
 As you can see I've replaced DTR and CTS with RST and GPIO0, respectively. This board does have the original FTDI standard pins broken out, just-in-case, but so far I haven't ever had cause to use them.
+
+## 3.3 or 5?
+
+There is a solder jumper on the board to switch between 3.3v and 5v. It is set to 3.3v by default.

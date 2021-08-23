@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:USB_B_Micro J1
+L ESP_Programmer-rescue:USB_B_Micro-Connector J1
 U 1 1 611828BD
 P 3350 3050
 F 0 "J1" H 3407 3517 50  0000 C CNN

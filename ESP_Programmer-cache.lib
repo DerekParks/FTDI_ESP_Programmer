@@ -59,42 +59,6 @@ X Pin_6 6 200 -300 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_USB_B_Micro
-#
-DEF Connector_USB_B_Micro J 0 40 Y Y 1 F N
-F0 "J" -200 450 50 H V L CNN
-F1 "Connector_USB_B_Micro" -200 350 50 H V L CNN
-F2 "" 150 -50 50 H I C CNN
-F3 "" 150 -50 50 H I C CNN
-ALIAS USB_B_Mini
-$FPLIST
- USB*
-$ENDFPLIST
-DRAW
-C -150 85 25 0 1 10 F
-C -25 135 15 0 1 10 F
-S -200 -300 200 300 0 1 10 f
-S -5 -300 5 -270 0 1 0 N
-S 10 50 -20 20 0 1 10 F
-S 200 -205 170 -195 0 1 0 N
-S 200 -105 170 -95 0 1 0 N
-S 200 -5 170 5 0 1 0 N
-S 200 195 170 205 0 1 0 N
-P 2 0 1 10 -75 85 25 85 N
-P 4 0 1 10 -125 85 -100 85 -50 135 -25 135 N
-P 4 0 1 10 -100 85 -75 85 -50 35 0 35 N
-P 4 0 1 10 25 110 25 60 75 85 25 110 F
-P 5 0 1 0 -170 220 -70 220 -80 190 -160 190 -170 220 F
-P 9 0 1 0 -185 230 -185 220 -175 190 -175 180 -65 180 -65 190 -55 220 -55 230 -185 230 N
-X VBUS 1 300 200 100 L 50 50 1 1 w
-X D- 2 300 -100 100 L 50 50 1 1 P
-X D+ 3 300 0 100 L 50 50 1 1 P
-X ID 4 300 -200 100 L 50 50 1 1 P
-X GND 5 0 -400 100 U 50 50 1 1 w
-X Shield 6 -100 -400 100 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Device_C
 #
 DEF Device_C C 0 10 N Y 1 F N
@@ -173,76 +137,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Jumper_SolderJumper_3_Bridged12
+# ESP_Programmer-rescue_FT232RL-REEL-dk_Interface-Controllers
 #
-DEF Jumper_SolderJumper_3_Bridged12 JP 0 0 Y N 1 F N
-F0 "JP" -100 -100 50 H V C CNN
-F1 "Jumper_SolderJumper_3_Bridged12" 0 110 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- SolderJumper*Bridged12*
-$ENDFPLIST
-DRAW
-A -40 0 40 901 -901 0 1 0 N -40 40 -40 -40
-A -40 0 40 901 -901 0 1 0 F -40 40 -40 -40
-A 40 0 40 -899 899 0 1 0 N 40 -40 40 40
-A 40 0 40 -899 899 0 1 0 F 40 -40 40 40
-S -40 20 -20 -20 0 1 0 F
-S -20 40 20 -40 0 1 0 F
-P 2 0 1 0 -100 0 -80 0 N
-P 2 0 1 0 -40 40 -40 -40 N
-P 2 0 1 0 0 -50 0 -40 N
-P 2 0 1 0 40 40 40 -40 N
-P 2 0 1 0 100 0 80 0 N
-X A 1 -200 0 100 R 50 50 1 1 P
-X C 2 0 -150 100 U 50 50 1 1 I
-X B 3 200 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Mechanical_MountingHole_Pad
-#
-DEF Mechanical_MountingHole_Pad H 0 40 N N 1 F N
-F0 "H" 0 250 50 H V C CNN
-F1 "Mechanical_MountingHole_Pad" 0 175 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- MountingHole*Pad*
-$ENDFPLIST
-DRAW
-C 0 50 50 0 1 50 N
-X 1 1 0 -100 100 U 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# avr-arduino_FTDI_Header
-#
-DEF avr-arduino_FTDI_Header J 0 40 Y Y 1 F N
-F0 "J" -100 300 50 H V C CNN
-F1 "avr-arduino_FTDI_Header" 0 -400 50 H V C CNN
-F2 "avr-arduino:FTDI_Header" 0 400 50 H I C CNN
-F3 "" -50 0 50 H I C CNN
-$FPLIST
- FTDI*Header*
-$ENDFPLIST
-DRAW
-S -150 250 100 -350 0 1 10 f
-X DTR 1 200 200 100 L 50 50 1 1 P
-X RX 2 200 100 100 L 50 50 1 1 P
-X TX 3 200 0 100 L 50 50 1 1 P
-X VCC 4 200 -100 100 L 50 50 1 1 P
-X CTS 5 200 -200 100 L 50 50 1 1 P
-X GND 6 200 -300 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# dk_Interface-Controllers_FT232RL-REEL
-#
-DEF dk_Interface-Controllers_FT232RL-REEL U 0 40 Y Y 1 F N
+DEF ESP_Programmer-rescue_FT232RL-REEL-dk_Interface-Controllers U 0 40 Y Y 1 F N
 F0 "U" -500 450 60 H V C CNN
-F1 "dk_Interface-Controllers_FT232RL-REEL" -100 -800 60 V V L CNN
+F1 "ESP_Programmer-rescue_FT232RL-REEL-dk_Interface-Controllers" -100 -800 60 V V L CNN
 F2 "digikey-footprints:SSOP-28_W5.30mm" 200 200 60 H I L CNN
 F3 "https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT232R.pdf" 200 300 60 H I L CNN
 F4 "768-1007-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
@@ -287,11 +186,32 @@ X DSR 9 -700 -300 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# dk_Transistors-Bipolar-BJT-Arrays_MBT3904DW1T1G
+# ESP_Programmer-rescue_FTDI_Header-avr-arduino
 #
-DEF dk_Transistors-Bipolar-BJT-Arrays_MBT3904DW1T1G Q 0 0 Y Y 1 F N
+DEF ESP_Programmer-rescue_FTDI_Header-avr-arduino J 0 40 Y Y 1 F N
+F0 "J" -100 300 50 H V C CNN
+F1 "ESP_Programmer-rescue_FTDI_Header-avr-arduino" 0 -400 50 H V C CNN
+F2 "avr-arduino:FTDI_Header" 0 400 50 H I C CNN
+F3 "" -50 0 50 H I C CNN
+$FPLIST
+ FTDI*Header*
+$ENDFPLIST
+DRAW
+S -150 250 100 -350 0 1 10 f
+X DTR 1 200 200 100 L 50 50 1 1 P
+X RX 2 200 100 100 L 50 50 1 1 P
+X TX 3 200 0 100 L 50 50 1 1 P
+X VCC 4 200 -100 100 L 50 50 1 1 P
+X CTS 5 200 -200 100 L 50 50 1 1 P
+X GND 6 200 -300 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# ESP_Programmer-rescue_MBT3904DW1T1G-dk_Transistors-Bipolar-BJT-Arrays
+#
+DEF ESP_Programmer-rescue_MBT3904DW1T1G-dk_Transistors-Bipolar-BJT-Arrays Q 0 0 Y Y 1 F N
 F0 "Q" -380 340 60 H V L CNN
-F1 "dk_Transistors-Bipolar-BJT-Arrays_MBT3904DW1T1G" 350 0 60 V V C CNN
+F1 "ESP_Programmer-rescue_MBT3904DW1T1G-dk_Transistors-Bipolar-BJT-Arrays" 350 0 60 V V C CNN
 F2 "digikey-footprints:SOT-363" 200 200 60 H I L CNN
 F3 "http://www.onsemi.com/pub/Collateral/MBT3904DW1T1-D.PDF" 200 300 60 H I L CNN
 F4 "MBT3904DW1T1GOSCT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
@@ -330,6 +250,85 @@ X C1 3 -200 400 100 D 50 50 1 1 P
 X E1 4 -300 -400 100 U 50 50 1 1 P
 X B1 5 0 -400 100 U 50 50 1 1 I
 X C2 6 200 -400 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# ESP_Programmer-rescue_USB_B_Micro-Connector
+#
+DEF ESP_Programmer-rescue_USB_B_Micro-Connector J 0 40 Y Y 1 F N
+F0 "J" -200 450 50 H V L CNN
+F1 "ESP_Programmer-rescue_USB_B_Micro-Connector" -200 350 50 H V L CNN
+F2 "" 150 -50 50 H I C CNN
+F3 "" 150 -50 50 H I C CNN
+$FPLIST
+ USB*
+$ENDFPLIST
+DRAW
+C -150 85 25 0 1 10 F
+C -25 135 15 0 1 10 F
+S -200 -300 200 300 0 1 10 f
+S -5 -300 5 -270 0 1 0 N
+S 10 50 -20 20 0 1 10 F
+S 200 -205 170 -195 0 1 0 N
+S 200 -105 170 -95 0 1 0 N
+S 200 -5 170 5 0 1 0 N
+S 200 195 170 205 0 1 0 N
+P 2 0 1 10 -75 85 25 85 N
+P 4 0 1 10 -125 85 -100 85 -50 135 -25 135 N
+P 4 0 1 10 -100 85 -75 85 -50 35 0 35 N
+P 4 0 1 10 25 110 25 60 75 85 25 110 F
+P 5 0 1 0 -170 220 -70 220 -80 190 -160 190 -170 220 F
+P 9 0 1 0 -185 230 -185 220 -175 190 -175 180 -65 180 -65 190 -55 220 -55 230 -185 230 N
+X VBUS 1 300 200 100 L 50 50 1 1 w
+X D- 2 300 -100 100 L 50 50 1 1 P
+X D+ 3 300 0 100 L 50 50 1 1 P
+X ID 4 300 -200 100 L 50 50 1 1 P
+X GND 5 0 -400 100 U 50 50 1 1 w
+X Shield 6 -100 -400 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Jumper_SolderJumper_3_Bridged12
+#
+DEF Jumper_SolderJumper_3_Bridged12 JP 0 0 Y N 1 F N
+F0 "JP" -100 -100 50 H V C CNN
+F1 "Jumper_SolderJumper_3_Bridged12" 0 110 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SolderJumper*Bridged12*
+$ENDFPLIST
+DRAW
+A -40 0 40 901 -901 0 1 0 N -40 40 -40 -40
+A -40 0 40 901 -901 0 1 0 F -40 40 -40 -40
+A 40 0 40 -899 899 0 1 0 N 40 -40 40 40
+A 40 0 40 -899 899 0 1 0 F 40 -40 40 40
+S -40 20 -20 -20 0 1 0 F
+S -20 40 20 -40 0 1 0 F
+P 2 0 1 0 -100 0 -80 0 N
+P 2 0 1 0 -40 40 -40 -40 N
+P 2 0 1 0 0 -50 0 -40 N
+P 2 0 1 0 40 40 40 -40 N
+P 2 0 1 0 100 0 80 0 N
+X A 1 -200 0 100 R 50 50 1 1 P
+X C 2 0 -150 100 U 50 50 1 1 I
+X B 3 200 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Mechanical_MountingHole_Pad
+#
+DEF Mechanical_MountingHole_Pad H 0 40 N N 1 F N
+F0 "H" 0 250 50 H V C CNN
+F1 "Mechanical_MountingHole_Pad" 0 175 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*Pad*
+$ENDFPLIST
+DRAW
+C 0 50 50 0 1 50 N
+X 1 1 0 -100 100 U 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
