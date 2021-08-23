@@ -17,9 +17,11 @@ So at some point during the pandemic, I setout to figure out how [the auto-reset
 
 ## The Programmer
 
-![Schematic](./image/schematic.png?raw=true "Schematic")
-![PCB](image/pcb.png?raw=true "PCB")
-![V1 programmer](image/v1.jpg?raw=true "V1 where I forgot to add current limiting resistors to the status LED's, D'oh!")
+![Schematic](./images/schematic.png?raw=true "Schematic")
+
+![PCB](images/pcb.png?raw=true "PCB")
+
+![V1 programmer](images/v1.jpg?raw=true "V1 where I forgot to add current limiting resistors to the status LED's, D'oh!")
 
 There are also physical tactical flash and reset buttons in case for some reason my amazing auto-reset circuit fails. 
 
