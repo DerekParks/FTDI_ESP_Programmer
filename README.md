@@ -22,6 +22,7 @@ So at some point during the pandemic, I setout to figure out how [the auto-reset
 ![PCB](images/pcb.png?raw=true "PCB")
 
 ![V1 programmer](images/v1.jpg?raw=true "V1 where I forgot to add current limiting resistors to the status LED's, D'oh!")
+("V1 where I forgot to add current limiting resistors to the status LED's, D'oh!")
 
 There are also physical tactical flash and reset buttons in case for some reason my amazing auto-reset circuit fails. 
 
