@@ -44,3 +44,7 @@ As you can see I've replaced DTR and CTS with RST and GPIO0, respectively. This 
 ## 3.3 or 5?
 
 There is a solder jumper on the board to switch between 3.3v and 5v. It is set to 3.3v by default.
+
+## C6 & C7
+
+The decoupling, C6 & C7 should be removed if using an ESP01 and I2C.
