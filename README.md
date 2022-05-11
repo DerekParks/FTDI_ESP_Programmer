@@ -11,17 +11,17 @@ At least now, we are using FTDI clones that are cheaper. But I still don't want 
 For years I have used the [3.3v version of Sparkfun's FTDI breakout](https://www.sparkfun.com/products/9873) for programming ESP's. 
 And for an equal amount of years, I've been annoyed that auto-reset doesn't work like on the all-in-one dev boards.
 
-I will freely admit that support for OTA updates has made this less of an annoyance. But when I am working out bugs I find iterating with a physical programmer faster.
+I will freely admit that support for OTA updates has made this less of an annoyance. But when I am working out bugs, I find iterating with a physical programmer faster.
 
 So at some point during the pandemic, I setout to figure out how [the auto-reset feature on ESP's works](https://hallard.me/esp8266-autoreset/) and to make my own FTDI programmer.
 
 ## The Programmer
 
-![Schematic](./images/schematic.png?raw=true "Schematic")
+![Schematic](./images/schematic2.png?raw=true "Schematic")
 
-![PCB](images/pcb.png?raw=true "PCB")
+![PCB](images/pcb2.png?raw=true "PCB")
 
-![V1 programmer](images/v1.jpg?raw=true "V1 where I forgot to add current limiting resistors to the status LED's, D'oh!")
+![V1 programmer](images/v2.jpg?raw=true "V1 where I forgot to add current limiting resistors to the status LED's, D'oh!")
 ("V1 where I forgot to add current limiting resistors to the status LED's, D'oh!")
 
 There are also physical tactical flash and reset buttons in case for some reason my amazing auto-reset circuit fails. 
